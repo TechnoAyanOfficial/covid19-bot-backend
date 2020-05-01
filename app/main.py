@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
 import requests
-import json
 app = Flask(__name__)
 
 BASE_URL = "https://api.covid19api.com"
@@ -26,3 +25,4 @@ def get_total_cases_by_country_code():
         return jsonify({
             "message": "Something went wrong"
         })
+
