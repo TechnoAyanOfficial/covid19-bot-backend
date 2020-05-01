@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import requests
 app = Flask(__name__)
+CORS(app)
 
 BASE_URL = "https://api.covid19api.com"
 
